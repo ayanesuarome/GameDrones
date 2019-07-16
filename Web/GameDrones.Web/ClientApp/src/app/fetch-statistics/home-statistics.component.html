@@ -1,0 +1,17 @@
+<h1>Game statistics</h1>
+
+<form>
+  <p class="form-group"style="font-size:large;width:350px;">
+    <label for="PlayerName" style="float:left;">Player Name</label>
+    <input placeholder="Type the player name" type="text"
+           (input)="playerName = $event.target.value"
+           class="form-control" id="PlayerName" [value]="">
+  </p>
+
+  <button type="button" (click)='onPlayerStatistics()'
+          class="btn btn-primary">
+    Look for statistics
+  </button>
+</form>
+
+

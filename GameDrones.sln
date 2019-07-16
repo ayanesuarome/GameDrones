@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{2C10168C-72A4-43AD-BAF5-1D5C238695B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{113BF8ED-01C3-4A9C-861B-009790222AB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameDrones.Web", "Web\GameDrones.Web\GameDrones.Web.csproj", "{43C48D6A-5B91-4072-A106-655DC262FCD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameDrones.Service", "Libraries\GameDrone.Service\GameDrones.Service.csproj", "{514C05B5-DA96-43A4-A6FE-0EAE20E07E1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameDrones.Data", "Libraries\GameDrone.Data\GameDrones.Data.csproj", "{5B1A0F93-6E95-4F8C-AB0F-E05FC7DB00C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameDrones.Core", "Libraries\GameDrones.Core\GameDrones.Core.csproj", "{0B00408E-46E5-4A90-8EDA-CDD661BFD8A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameDrones.Domain", "Libraries\GameDrone.Domain\GameDrones.Domain.csproj", "{0B8049C6-B302-4EA4-B44A-081A1BEF7E4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2F4807A3-8076-4292-B05D-336DD6D27542}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameDrones.Data.Tests", "Tests\GameDrone.Data.Tests\GameDrones.Data.Tests.csproj", "{51B49382-A6FF-42A1-9358-D5C66E2EE9E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameDrones.Tests", "Tests\GameDrones.Tests\GameDrones.Tests.csproj", "{7DA77AF1-A40A-412E-91D3-3C53E989BA5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F77C955-0E2D-41CC-9206-2BD7A3A9B5D5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+		UruIT_-_Game_of_Drones__Bloomberg_.docx = UruIT_-_Game_of_Drones__Bloomberg_.docx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43C48D6A-5B91-4072-A106-655DC262FCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C48D6A-5B91-4072-A106-655DC262FCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C48D6A-5B91-4072-A106-655DC262FCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C48D6A-5B91-4072-A106-655DC262FCD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{514C05B5-DA96-43A4-A6FE-0EAE20E07E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514C05B5-DA96-43A4-A6FE-0EAE20E07E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514C05B5-DA96-43A4-A6FE-0EAE20E07E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514C05B5-DA96-43A4-A6FE-0EAE20E07E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1A0F93-6E95-4F8C-AB0F-E05FC7DB00C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1A0F93-6E95-4F8C-AB0F-E05FC7DB00C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1A0F93-6E95-4F8C-AB0F-E05FC7DB00C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1A0F93-6E95-4F8C-AB0F-E05FC7DB00C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B00408E-46E5-4A90-8EDA-CDD661BFD8A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B00408E-46E5-4A90-8EDA-CDD661BFD8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B00408E-46E5-4A90-8EDA-CDD661BFD8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B00408E-46E5-4A90-8EDA-CDD661BFD8A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8049C6-B302-4EA4-B44A-081A1BEF7E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8049C6-B302-4EA4-B44A-081A1BEF7E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8049C6-B302-4EA4-B44A-081A1BEF7E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8049C6-B302-4EA4-B44A-081A1BEF7E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B49382-A6FF-42A1-9358-D5C66E2EE9E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B49382-A6FF-42A1-9358-D5C66E2EE9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B49382-A6FF-42A1-9358-D5C66E2EE9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B49382-A6FF-42A1-9358-D5C66E2EE9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DA77AF1-A40A-412E-91D3-3C53E989BA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DA77AF1-A40A-412E-91D3-3C53E989BA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DA77AF1-A40A-412E-91D3-3C53E989BA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DA77AF1-A40A-412E-91D3-3C53E989BA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43C48D6A-5B91-4072-A106-655DC262FCD7} = {2C10168C-72A4-43AD-BAF5-1D5C238695B2}
+		{514C05B5-DA96-43A4-A6FE-0EAE20E07E1C} = {113BF8ED-01C3-4A9C-861B-009790222AB8}
+		{5B1A0F93-6E95-4F8C-AB0F-E05FC7DB00C2} = {113BF8ED-01C3-4A9C-861B-009790222AB8}
+		{0B00408E-46E5-4A90-8EDA-CDD661BFD8A3} = {113BF8ED-01C3-4A9C-861B-009790222AB8}
+		{0B8049C6-B302-4EA4-B44A-081A1BEF7E4E} = {113BF8ED-01C3-4A9C-861B-009790222AB8}
+		{51B49382-A6FF-42A1-9358-D5C66E2EE9E8} = {2F4807A3-8076-4292-B05D-336DD6D27542}
+		{7DA77AF1-A40A-412E-91D3-3C53E989BA5F} = {2F4807A3-8076-4292-B05D-336DD6D27542}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {016BA787-D29A-4CE6-9951-2A16FC7B13C9}
+	EndGlobalSection
+EndGlobal

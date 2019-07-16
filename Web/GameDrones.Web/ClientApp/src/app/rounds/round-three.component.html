@@ -1,0 +1,67 @@
+<section id="RoundThree" *ngIf="isRoundThree">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="SelectPlayerOneMove" *ngIf="isRoundPlayerOne">
+          <h2>Round Three</h2>
+          <h3>{{ namePlayerOne }}</h3>
+          <form>
+            <div class="form-group" style="font-size: large; width: 350px;">
+              <label for="PlayerOneMove" style="float: left;">Select Move:</label>
+              <select class="form-control" (change)="onPlayerOneMoveChange($event.target.value)">
+                <option *ngFor="let move of matchMoves" value={{move.id}}>
+                  {{ move.name }}
+                </option>
+              </select>
+            </div>
+
+            <button type="button" (click)='onPlayPlayerOne()'
+                    class="btn btn-primary">
+              Ok
+            </button>
+          </form>
+        </div>
+
+        <div id="SelectPlayerTwoMove" *ngIf="isRoundPlayerTwo">
+          <h2>Round Three</h2>
+          <h3>{{ namePlayerTwo }}</h3>
+          <form>
+            <div class="form-group" style="font-size: large; width: 350px;">
+              <label for="PlayerTwoMove" style="float: left;">Select Move:</label>
+              <select class="form-control" (change)="onPlayerTwoMoveChange($event.target.value)">
+                <option *ngFor="let move of matchMoves" value={{move.id}}>
+                  {{ move.name }}
+                </option>
+              </select>
+            </div>
+
+            <button type="button" (click)='onPlay()'
+                    class="btn btn-primary">
+              Ok
+            </button>
+          </form>
+        </div>
+
+      </div>
+      <div class="col">
+        <h3>Score</h3>
+        <table class='table table-striped' *ngIf="matchResults">
+          <thead>
+            <tr>
+              <th>Round</th>
+              <th>Winner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let result of matchResults">
+              <td>{{ result.round }}</td>
+              <td>{{ result.winnerName }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-round-end *ngIf="isRoundEnd"></app-round-end>

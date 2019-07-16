@@ -1,0 +1,27 @@
+<h1>Game statistics</h1>
+
+<h3>Player: {{playerName}}</h3>
+
+<p *ngIf="!statistics"><em>The player {{playerName}} doesn't have any won game</em></p>
+
+<table class='table table-striped' *ngIf="statistics">
+  <thead>
+  <tr>
+    <th>Winner</th>
+    <th>Loser</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let st of statistics">
+    <td>{{ st.winnerName }}</td>
+    <td>{{ st.loserName }}</td>
+  </tr>
+  </tbody>
+</table>
+
+<ejs-grid [dataSource]='data' [allowPaging]="true" [pageSettings]='pageSettings'>
+  <e-columns>
+    <e-column field='WinnerName' headerText='Winner Name' textAlign='Right' width=90></e-column>
+    <e-column field='LoserName' headerText='Losser Name' width=120></e-column>
+  </e-columns>
+</ejs-grid>

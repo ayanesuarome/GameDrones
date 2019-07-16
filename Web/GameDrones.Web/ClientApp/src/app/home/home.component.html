@@ -1,0 +1,31 @@
+<h1>Game of Drones</h1>
+
+<section id="StartGame" *ngIf="isStartGame">
+  <div class="row">
+    <div class="col-md-12" style="margin-top: 40px"><h2>Enter Player's Name</h2></div>
+    <div class="col-md-12">
+      <form>
+        <div class="form-group" style="font-size:large;width:350px;">
+          <label for="PlayerOne" style="float:left;">Player 1</label>
+          <input placeholder="Name of first player" type="text" [(ngModel)]='namePlayerOne'
+                 (input)="namePlayerOne = $event.target.value"
+                 class="form-control" id="PlayerOne" [value]="">
+        </div>
+
+        <div class="form-group" style="font-size:large;width:350px;">
+          <label for="PlayerTwo" style="float:left;">Player 2</label>
+          <input placeholder="Name of second player" type="text" [(ngModel)]='namePlayerTwo'
+                 (input)="namePlayerTwo = $event.target.value"
+                 class="form-control" id="PlayerTwo" [value]="">
+        </div>
+
+        <button type="button" (click)='onStartGame()'
+                class="btn btn-primary">
+          Start
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<app-round-one *ngIf="isRoundOne" [PlayerOneData]="namePlayerOne" [PlayerTwoData]="namePlayerTwo"></app-round-one>

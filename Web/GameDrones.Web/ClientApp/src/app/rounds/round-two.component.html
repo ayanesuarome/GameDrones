@@ -1,0 +1,50 @@
+<section id="RoundTwo" *ngIf="isRoundTwo">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="SelectPlayerOneMove" *ngIf="isRoundPlayerOne">
+          <h2>Round Two</h2>
+          <h3>{{ namePlayerOne }}</h3>
+          <form>
+            <div class="form-group" style="font-size: large; width: 350px;">
+              <label for="PlayerOneMove" style="float: left;">Select Move:</label>
+              <select class="form-control" (change)="onPlayerOneMoveChange($event.target.value)">
+                <option *ngFor="let move of matchMoves" value={{move.id}}>
+                  {{ move.name }}
+                </option>
+              </select>
+            </div>
+
+            <button type="button" (click)='onPlayPlayerOne()'
+                    class="btn btn-primary">
+              Ok
+            </button>
+          </form>
+        </div>
+
+        <div id="SelectPlayerTwoMove" *ngIf="isRoundPlayerTwo">
+          <h2>Round Two</h2>
+          <h3>{{ namePlayerTwo }}</h3>
+          <form>
+            <div class="form-group" style="font-size: large; width: 350px;">
+              <label for="PlayerTwoMove" style="float: left;">Select Move:</label>
+              <select class="form-control" (change)="onPlayerTwoMoveChange($event.target.value)">
+                <option *ngFor="let move of matchMoves" value={{move.id}}>
+                  {{ move.name }}
+                </option>
+              </select>
+            </div>
+
+            <button type="button" (click)='onPlay()'
+                    class="btn btn-primary">
+              Ok
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-round-three *ngIf="isRoundThree" [PlayerOneData]="namePlayerOne" [PlayerTwoData]="namePlayerTwo"></app-round-three>
