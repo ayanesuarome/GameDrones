@@ -349,3 +349,4 @@ healthchecksdb
 MigrationBackup/
 
 #Log files
+Web/GameDrones.Web/logs/
