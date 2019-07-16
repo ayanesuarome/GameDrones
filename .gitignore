@@ -349,4 +349,3 @@ healthchecksdb
 MigrationBackup/
 
 #Log files
-**/logs/*
