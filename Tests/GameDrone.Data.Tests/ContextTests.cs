@@ -17,7 +17,7 @@ namespace GameDrones.Data.Tests
         #region Fields
 
         private GameDroneContext _gameDroneContext;
-        private const string ConnectionString = "data source=DESKTOP-4S89ACT;initial catalog=GameDrones;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework";
+        private const string ConnectionString = "data source=X;initial catalog=GameDrones;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework";
 
         #endregion
 
