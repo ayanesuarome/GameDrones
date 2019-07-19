@@ -4,7 +4,7 @@ Games of Drones is a Web application based on the game Rock, Paper and Scissors 
 ## Description
 In Game of Drones there are two players trying to conquer each other. 
 <br />
-Players take turns to make their move, choosing Paper, Rock or Scissors. Each move beats another, just like the game ìPaper, rock, scissorsî. 
+Players take turns to make their move, choosing Paper, Rock or Scissors. Each move beats another, just like the game ‚ÄúPaper, rock, scissors‚Äù. 
 <br />
 Like so:
 <ul>
@@ -39,7 +39,7 @@ The result of each game is stored to keep track of games won by each player. The
 </ul>
 
 ## License
-<a href="https://github.com/ayanesuarome/GameDrones/blob/master/LICENSE">MIT</a>
+<a href="https://github.com/ayanesuarome/GameDrones/blob/master/LICENSE">GNU General Public License v3.0</a>
 # IMPORTANT DETAILS FOR RUNNING THE APPLICATION
 <ul>
   <li>Edit the server name property located at GameDrones.Web/appsettings.json</li>
